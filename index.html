@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet/less" href="css/style.less">
+    <title>Карточки</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a class="navbar-item-check" href="#">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 9L10 12L20 2" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 10V17C19 18.1046 18.1046 19 17 19H3C1.89543 19 1 18.1046 1 17V3C1 1.89543 1.89543 1 3 1H14" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-item-message" href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 13C19 14.1046 18.1046 15 17 15H5L1 19V3C1 1.89543 1.89543 1 3 1H17C18.1046 1 19 1.89543 19 3V13Z" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-item-mail" href="#">
+                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3L11 10L1 3" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-item-calendar" href="#">
+                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="3" width="18" height="18" rx="2" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 1V5" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 1V5" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 9H19" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-item-star" href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 1L14.09 7.26L21 8.27L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27L7.91 7.26L11 1V1Z" stroke="#FFA84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#">
+                            <span>English</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#">
+                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 7C16 3.68629 13.3137 1 10 1C6.68629 1 4 3.68629 4 7C4 14 1 16 1 16H19C19 16 16 14 16 7" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.73 20C11.3722 20.6168 10.7131 20.9965 10 20.9965C9.28695 20.9965 8.62782 20.6168 8.27002 20" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L14.65 14.65" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <span>John Doe</span>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav class="nav2">
+                
+                <h2 class="nav2-title">Card Actions</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb__list">
+                        <a class="breadcrumb__list-item" href="#">
+                            <span class="home">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                </svg>
+                            </span> 
+                        </a>
+                    </li>
+                    <li class="breadcrumb__list">
+                        <a class="breadcrumb__list-item" href="#"><span>eCommerce</span></a>
+                    </li>
+                    <li class="breadcrumb__list">
+                        <span>Electronics</span>
+                    </li>
+                </ol>
+            
+            </nav>
+        </div>
+    </header>
+    
+    <section class="wraper">
+        <section>
+            
+            <aside class="filters">
+                <h3>Filters</h3>
+                <div class="filters-inner">
+                    <div class="type range">
+                        <h4 class="filters-title">Multi Range</h4>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="radio" type="radio" name="range-price">
+                                <span class="radio-style"></span>
+                                <span>$10</span>
+                            </label>
+                        </div>
+                        
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="radio" type="radio" name="range-price">
+                                <span class="radio-style"></span>
+                                <span>$10-$100</span>
+                            </label>
+                        </div>
+
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="radio" type="radio" name="range-price">
+                                <span class="radio-style"></span>
+                                <span>$100-$500</span>
+                            </label>
+                        </div>
+                        
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="radio" type="radio" name="range-price">
+                                <span class="radio-style"></span>
+                                <span>$500</span>
+                            </label>
+                        </div>
+                        
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="radio" type="radio" name="range-price" checked>
+                                <span class="radio-style"></span>
+                                <span>All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="type slider">
+                        <h4 class="filters-title">Slider</h4>
+                        <span>1 - 2500</span>
+                        <input type="range" min="1" max="2500" step="1" value="2500">
+                    </div>
+                    <hr>
+                    <div class="type category">
+                        <h4 class="filters-title">Category</h4>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Cell Phones</span>
+                            </label>
+                            <span>1920</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Computers & Tablets</span>
+                            </label>
+                            <span>1820</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Cell Phone Accessories</span>
+                            </label>
+                            <span>462</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Appliances</span>
+                            </label>
+                            <span>6556</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Audio</span>
+                            </label>
+                            <span>120</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>iPhone Accessories</span>
+                            </label>
+                            <span>353</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Cameras & Camcorders</span>
+                            </label>
+                            <span>45</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>iPhone Cases & Clips</span>
+                            </label>
+                            <span>456</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>TV & Home Theater</span>
+                            </label>
+                            <span>55</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Small Kitchen Appliances</span>
+                            </label>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="type brand">         
+                        <h4 class="filters-title">Brand</h4>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Insigni</span> 
+                            </label>
+                            <span>220</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Samsung</span> 
+                            </label>
+                            <span>120</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Apple</span> 
+                            </label>
+                            <span>320</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>HP</span> 
+                            </label>
+                            <span>32</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Sony</span> 
+                            </label>
+                            <span>520</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Metra</span> 
+                            </label>
+                            <span>55</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Dyne</span> 
+                            </label>
+                            <span>120</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>LG</span> 
+                            </label>
+                            <span>98</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Canon</span> 
+                            </label>
+                            <span>99</span>
+                        </div>
+                        <div class="filter__type-item">
+                            <label class="label">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-style"></span>
+                                <span>Speck</span> 
+                            </label>
+                            <span>575</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="type rating">
+                        <h4 class="filters-title">Rating</h4>
+                        <label class="filter__type-item">
+                            <div class="stars">
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div> 
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <span>& Up</span>
+                            </div>
+                            <span>8500</span>            
+                        </label>
+                        <label class="filter__type-item">
+                            <div class="stars">
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div> 
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <span>& Up</span>
+                            </div>
+                            <span>3250</span>            
+                        </label>
+                        <label class="filter__type-item">
+                            <div class="stars">
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div> 
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <span>& Up</span>
+                            </div>
+                            <span>1120</span>            
+                        </label>
+                        <label class="filter__type-item">
+                            <div class="stars">
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div> 
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <span>& Up</span>
+                            </div>
+                            <span>3320</span>            
+                        </label>
+                        <label class="filter__type-item">
+                            <div class="stars">
+                                <div class="star">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div> 
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <div class="star">
+                                    <svg class="fill" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <span>& Up</span>
+                            </div>
+                            <span>5452</span>            
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-clear">CLEAR ALL FILTERS</button>
+            </aside>              
+            
+        </section>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/less" ></script> 
+    <script src="js/script.js"></script>   
+</body>
+</html>
