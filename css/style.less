@@ -20,6 +20,10 @@ hr {
   border-color: rgba(0, 0, 0, 0.0778245);
 }
 
+
+///////////Кнопки//////////////
+
+
 .btn {
   margin: 0;
   padding: 0;
@@ -27,252 +31,6 @@ hr {
   outline: none;
   cursor: pointer;
 }
-
-
-.filters {
-  width: 370px;
-  height: 1520px;
-  // margin: 30px;
- 
-  
-  &-inner {
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.0778245);
-    background-color: white;
-    margin-bottom: 30px;
-  }
-
-  &-title {
-    margin: 0;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    color: #2C2C2C;
-  }
-
- 
-  
-}
-
-.filter__type-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 16px 0;
-}
-
-
-
-input[type=range] {
-  -webkit-appearance:none;
-  outline: none;
-  background-color: #6F64F8;
-  height: 6px;
-  border-radius: 3px;
-  width: 100%;
-  cursor: pointer;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance:none;
-  width: 20px;
-  height: 20px;
-  background-color: #6F64F8;
-  border-radius: 50px;
-}
-
-
-
-.checkbox {
-  position: absolute;
-  -webkit-appearance:none;
-}
-
-.checkbox-style {
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  border: 2px solid #999;
-  border-radius: 3px;
-  margin-left: -20px;
-  box-sizing: border-box;
-  margin-left: -20px;
-}
-
-.checkbox:checked + .checkbox-style::before {
-  content: "";
-  width: 17px;
-  height: 17px;
-  border-radius: 3px;
-  background-color: #6F64F8;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 10px  #6F64F8;
-}
-
-.label {
-  width: 100%;
-  padding-left: 20px;
-  cursor: pointer;
-} 
-
-
-.radio {
-  position: absolute;
-  -webkit-appearance:none;
-}
-
-
-.radio-style {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #999;
-  border-radius: 50px;
-  margin-left: -20px;
-  box-sizing: border-box;
-  margin-left: -20px;
-}
-
-.radio:checked + .radio-style::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  border-radius: 50px;
-  background-color: #6F64F8;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 10px  #6F64F8;  
-}
-
-
-
-///////////////////////// Шапка////////////////////////
-
-header div {
-  width: 100%;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  
-  // background-color: rgb(148, 89, 89);
-  // border: 1px solid black;
-}
-  
-.navbar {
-  display: flex;
-  align-items: center;
-  width: 1570px;
-  height: 62px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.0778245);
-  background-color: #fff;
-
-
-}
-
-
-
-
-.nav2 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 1570px;
-  height: 40px;
-  
-
-
-  &-title {
-    border-right: 1px solid  #979797;
-    color: #2C2C2C;
-    padding-right: 15px;
-    margin-right: 15px;
-    font-weight: 400;
-    
-  }
-}
-
-/////////////////////////////////////////////////////
-
-/////////////////////// Хлебные крошки /////////////////
-
-
-.breadcrumb {
-  padding: 0;
-  margin-left: 20px;
-  list-style-type: none;
-  
-
-  & li::after {
-    content: "/";
-  }
-
-  & li:last-child::after {
-    display: none;
-  }
-
-  & li {
-    display: inline;
-   
-  }
-
-  & a {
-    text-decoration: none;
-    color:  #6F64F8;
-    
-  }
-}
-
-
-.home{
-  position: relative;
-}
-
-.home svg{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 16px;
-  height: 16px;
-  margin-left: -16px;
- 
-}
-
-/////////////////////////////////////////////////
-
-///////////// RATING ////////////////
-
-.stars {
-  color: #3c4043;
-  cursor: pointer;
-
-}
-
-.stars:hover {
-  color: #6F64F8;
-}
-
-.star {
-  display: inline-block;
-  padding-right: 6px;
-  
-}
-
-.fill {
-  color: #8c8c8c;
-}
-
-/////////////////////////////////////////
-
-///////////////// Кнопки //////////////////
 
 .btn-clear {
   width: 100%;
@@ -284,40 +42,244 @@ header div {
   outline: none;
 }
 
-///////////////////////////////////////////
-/////////////NAVBAR//////////////////
 
-.navbar {
-  box-sizing: border-box;
-  padding: 10px;
-  display: inline-flex;
-  justify-content: space-between;
+///////////// шапка //////////////////////
 
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
-  .navbar-list {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1570px;
+    height: 62px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.0778245);
+    background-color: #fff;
+  }
+
+  &__list {
     padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding: 10px;
+  }
+ 
+  &__item {
+    padding: 10px;
+  } 
+}
 
-    .navbar-item {
-      padding: 10px;
+///////////////////////////////////////////////
+
+/////////////// Крошки ////////////////////////
+
+
+.card-action {
+  border-right: 1px solid  #979797;
+  color: #2C2C2C;
+  padding-right: 15px;
+  margin-right: 15px;
+  font-weight: 400;
+}
+
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1570px;
+  height: 40px;
+
+  &__list {
+    padding: 0;
+    margin-left: 20px;
+    list-style-type: none;
+  }
+
+  &__item::after {
+    content: "/";
+  }
+  
+  &__item:last-child::after {
+    display: none;
+  }
+  
+  &__item {
+    display: inline;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #6F64F8;
+  }
+
+  &__home{
+    position: relative;
+  
+    &-img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 16px;
+      height: 16px;
+      margin-left: -16px;
     }
   }
 }
 
-////////////////////////////////////////
+
+//////////////////////////////////////////////////
+
+//////////// Фильтр ///////////////////////////
+
+
+.filter {
+  width: 370px;
+  height: 1520px;
+    
+  &__inner {
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.0778245);
+    background-color: white;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2C2C2C;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+  }
+  
+  &__label {
+    width: 100%;
+    padding-left: 20px;
+    cursor: pointer;
+  } 
+}
+
+.radio {
+  position: absolute;
+  -webkit-appearance:none;
+
+  &__style {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #999;
+    border-radius: 50px;
+    margin-left: -20px;
+    box-sizing: border-box;
+    margin-left: -20px;
+  }
+
+  &:checked + 
+  &__style::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #6F64F8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 10px  #6F64F8;  
+  }
+}
+
+.range {
+  -webkit-appearance:none;
+  outline: none;
+  background-color: #6F64F8;
+  height: 6px;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width: 20px;
+    height: 20px;
+    background-color: #6F64F8;
+    border-radius: 50px;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  -webkit-appearance:none;
+
+  &__style {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #999;
+    border-radius: 3px;
+    margin-left: -20px;
+    box-sizing: border-box;
+    margin-left: -20px;
+  }
+
+  &:checked + 
+  &__style::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    background-color: #6F64F8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 10px  #6F64F8;
+  }
+}
+
+.stars {
+  color: #3c4043;
+  cursor: pointer;
+
+  &__star {
+    display: inline-block;
+    padding-right: 6px;
+
+    &_disabled {
+      color: #8c8c8c;
+    }
+  }
+}
+
+.stars:hover {
+  color: #6F64F8;
+}
+
+
+/////////////////////////////////////////
+
 
 //////////////// КАРТОЧКИ /////////////
 
-.wraper {
-  display: flex;
-}
 
 .section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: auto;
   width: 1570px;
   min-height: 1715px;
@@ -354,7 +316,6 @@ header div {
 }
 
 .card {
-  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -405,6 +366,7 @@ header div {
 .btn-add {
   font-size: 14px;
   font-weight: bold;
+  border-bottom-right-radius: 8px;
   color: #fff;
 }
 
@@ -420,7 +382,6 @@ header div {
 }
 
 .card-img {
-  // padding: 32px;
   margin: auto;
 }
 
